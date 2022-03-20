@@ -13200,7 +13200,7 @@ Stratify = Yes stellt außerdem sicher, dass das Verhältnis der Klassen in beid
     <span class="n">X</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)]</span><span class="o">.</span><span class="n">isnull</span><span class="p">(),</span> <span class="n">X</span><span class="o">.</span><span class="n">Price_In_Eur</span><span class="p">,</span> <span class="n">X</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)])</span>
 
 <span class="n">X</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">99</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
+<span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15467,12 +15467,12 @@ Test Accuracy: 0.9313004612922668
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>              precision    recall  f1-score   support
 
-           0       0.99      0.99      0.99     12981
-           1       0.96      0.97      0.97      3744
+           0       0.96      0.95      0.96     12981
+           1       0.84      0.86      0.85      3744
 
-    accuracy                           0.98     16725
-   macro avg       0.98      0.98      0.98     16725
-weighted avg       0.98      0.98      0.98     16725
+    accuracy                           0.93     16725
+   macro avg       0.90      0.91      0.90     16725
+weighted avg       0.93      0.93      0.93     16725
 
 </pre>
 </div>
