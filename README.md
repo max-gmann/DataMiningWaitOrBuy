@@ -36,5 +36,6 @@ Als Modelle wurden je ein Random Forest Classifier sowie ein Neuronales Netzwerk
 Darüber hinaus wurde ein monetäres Gütemaß angewendet:
 - Ground Truth: 1.388.860.66€
 - Random Forest v4: 1.279.392.33€
-- Neural Net v5: 1.244.365.11€
+- Neural Net v5: 1.244.365.11€ <br>
+
 Hierbei zeigt sich, dass der Random Forest Classifier leicht bessere Ergebnisse liefert.
